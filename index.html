@@ -1,23 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="imgdiv">
-            <div class="logocontainer">
-            <div class="odinlogo"></div>
-            <div class="txt">CoffeeMax</div>
-        </div>
-        </div>
-        <div class="formdiv">
-            
+    <div class="imgdiv">
+        <div class="imgsrc">
+            <p class="source">Photo By <a href="https://unsplash.com/photos/1xrZN6xlHXU">Allison Christine</p>
+            <a href="https://github.com/deaan17">
+                <p class="img-info">Created by Dean <a href="https://github.com/deaan17"></p>
+            </a>
         </div>
     </div>
-    
+    <div class="form">
+        <div class="form-info">
+            <h3>This is not a real online service! You know you need something like
+                this in your life to help you realize your deepest dreams. Sign up
+                <i>now</i> to get started. <br /><br />
+                You <i>know</i> you want to.</h3>
+        </div>
+        <form action="">
+            <h3>Let's do this</h3>
+            <div class="inputs">
+                <div class="first-name">
+                    <input type="text" 
+                    class="form-input" 
+                    id="first-name" 
+                    placeholder="First Name"required>
+                    <label for="first-name" class="form-label">First Name:</label>
+                </div>
+                <div class="last-name">
+                    <input type="text" 
+                    class="form-input" 
+                    id="last-name" 
+                    placeholder="Last Name"required>
+                    <label for="last-name" class="form-label">Last Name:</label>
+                </div>
+            </div>
+            <div class="inputs">
+                <div class="email">
+                    <input type="email" 
+                    class="form-input" 
+                    id="email" 
+                    placeholder="Email" required>
+                    <label for="email" class="form-label">Email:</label>
+                </div>
+                <div class="phone">
+                    <input type="number" 
+                    class="form-input" 
+                    id="phone" 
+                    placeholder="Phone" required>
+                    <label for="phone" class="form-label">Phone:</label>
+                </div>
+            </div>
+            <div class="inputs">
+                <div class="password">
+                    <input type="password" 
+                    class="form-input" 
+                    id="password" 
+                    placeholder="Password" required>
+                    <label for="password" class="form-label">Password:</label>
+                </div>
+                <div class="confirm-password">
+                    <input type="password" 
+                    class="form-input" 
+                    id="confirm-password" 
+                    placeholder="Confirm Password" required>
+                    <label for="phone" class="form-label">Confirm Password:</label>
+                </div>
+            </div>
+            <div class="form-end">
+                <div class="errorMessage"></div>
+                <button class="btn" type="submit">Create Account</button>
+                <h2>Already have an account? <a href="" class="login">Login</a></h2>
+            </div>
+            
+
+        </form>
+    </div>
+
+
 </body>
+
 </html>
